@@ -2,11 +2,16 @@ import React from 'react';
 import './QuizDetails.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 const QuizDetails = ({quiz}) => {
     const {correctAnswer,id, options, question} =quiz
 
+const notify =() =>{
+    toast(correctAnswer)
+}
 
     return (
         <div className='text-center'>
@@ -16,7 +21,8 @@ const QuizDetails = ({quiz}) => {
            <div className='d-flex qustionicon'>
            <h4 className=''><small>{question}</small></h4>
            
-           <div className=''><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></div>
+           <div onClick={notify} className=''><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></div>
+           <ToastContainer/>
            </div>
 
             <div className='options'>
