@@ -14,7 +14,7 @@ const Home = () => {
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima neque saepe cumque quisquam exercitationem culpa nam incidunt architecto, ex totam.</p>
 
             </div>
-<div className='col-6 data text-center'>
+<div className='col-6 data '>
 
 {
     topics.data.map(topic=><Topic

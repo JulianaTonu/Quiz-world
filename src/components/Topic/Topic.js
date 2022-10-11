@@ -1,17 +1,22 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Topic.css'
+// const navigate = useNavigate()
+
 const Topic = ({topic}) => {
-const {name,logo}=topic
+
+const {name,logo,id}=topic
     return (
         <div className='topic row'>
-            <div className='col-6'>
-            <h1>hey topic {topic.id}</h1>
-
+            
 <img src={logo} alt="" />
 <h3>Name:{name}</h3>
-<button>Start Quiz</button>
+
+<Link to={`/topic/${id}`}><button className='btn btn-warning'>Start Quiz</button>
+           
+            </Link>
+
             </div>
-        </div>
     );
 };
 

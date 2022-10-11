@@ -1,5 +1,14 @@
 .data{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 25%;
 }
 
+@media screen and (max-width:767px){
+    .data{
+        grid-template-columns: repeat(1,0.5fr);
+        gap: 20px;
+
+    }
+}
