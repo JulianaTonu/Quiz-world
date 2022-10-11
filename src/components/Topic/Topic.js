@@ -2,7 +2,7 @@ import React from 'react';
 import { Link} from 'react-router-dom';
 
 import './Topic.css'
-import Quiz from './../Quiz/Quiz';
+
 
 
 const Topic = ({topic}) => {

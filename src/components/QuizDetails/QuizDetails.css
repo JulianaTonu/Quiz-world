@@ -1,9 +1,9 @@
 .quiz-card{
-    width: 600px;
+    width: 800px;
     border: 2px solid rgb(80, 74, 74);
     border-radius: 10px;
     margin: 20px;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 .quiz-card p{
     background-color: rgb(244, 239, 244);
@@ -11,7 +11,10 @@
     border-radius: 10px;
 }
 
-
+.qustionicon{
+    display: flex;
+   justify-content: space-between;
+}
 .options{
     padding: 20px;
     margin: 20px;
