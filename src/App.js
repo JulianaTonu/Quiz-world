@@ -3,7 +3,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Main from './components/Main/Main';
 import Home from './components/Home/Home';
-import QuizDetails from './components/QuizDetails/QuizDetails';
+// import QuizDetails from './components/QuizDetails/QuizDetails';
+import Quiz from './components/Quiz/Quiz';
 
 
 function App() {
@@ -22,11 +23,11 @@ function App() {
      element:<Home></Home>},
 
      {path:'/topic/:topicId',
-     loader: async()=>{
-      
+     loader: async({params})=>{
+      return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
      },
-     element:<QuizDetails></QuizDetails>
-        }
+     element:<Quiz></Quiz> 
+        } 
 
     //  {path:'/topics',
     //  loader: async()=>{
