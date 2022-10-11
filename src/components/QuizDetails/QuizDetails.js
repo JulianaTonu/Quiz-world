@@ -13,14 +13,6 @@ const notify =() =>{
     toast(correctAnswer)
 }
 
-
-// const myNotify =() =>{
-//     toast('answer is correct')
-// }
-// const myNotify2 =() =>{
-//     toast('answer is wrong')
-// }
-
 const myNotify =( ) =>{
     if (correctAnswer === options[0]){
         toast("answer is correct")

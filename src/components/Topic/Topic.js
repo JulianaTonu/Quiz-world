@@ -12,9 +12,9 @@ const {name,logo,id}=topic
         <div className='topic row'>
             
 <img src={logo} alt="" />
-<h3>Name:{name}</h3>
+<h3 className='text-white'>{name}</h3>
 
-<Link to={`/topic/${id}`}><button className='btn btn-warning'>Start Quiz</button>
+<Link to={`/topic/${id}`}><button className='btn btn-white text-white fw-bold quiz-btn'>Start Quiz</button>
            
             </Link>
            

@@ -1,12 +1,12 @@
 .navbar{
-    background-color: rgb(69, 26, 67);
+    background-color: rgb(96, 1, 91);
     padding: 20px;
     /* margin: 10px; */
 }
 
 .active{
     padding: 10px;
-    background-color: rgb(4, 27, 69);
+    background-color: rgb(151, 8, 144);
    
    
     border-radius: 10px;

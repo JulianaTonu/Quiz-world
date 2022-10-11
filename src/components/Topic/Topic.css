@@ -2,9 +2,20 @@
 border: 2px solid rgb(70, 67, 67);
 margin: 5px;
 border-radius: 10px;
-background-color: rgb(154, 156, 156);
+background-color: rgb(96, 1, 91);
 
+width: 300px;
+padding: 10px;
 }
-img{
-    width:  300px;
+.topic img{
+    width:  100%;
+    margin: 10px;
+    padding-right: 10px;
+}
+.quiz-btn{
+    color: white;
+    background-color: rgb(151, 8, 144);
+}
+.quiz-btn:hover{
+    background-color: rgb(175, 58, 169);
 }
