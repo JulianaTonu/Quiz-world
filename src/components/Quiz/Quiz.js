@@ -10,7 +10,7 @@ const Quiz = () => {
 
 
     return (
-        <div>
+        <div className='container'>
           
             <h1>hey quiz :{topic.data.quetions}</h1>
             {
