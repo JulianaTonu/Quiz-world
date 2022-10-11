@@ -2,8 +2,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Main from './components/Main/Main';
-import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -14,8 +14,21 @@ function App() {
       {path:'/',
       
      element:<Home></Home>},
-     {path:'/home', element:<Home></Home>},
+
+     {path:'/home',
+     loader: async()=>{
+      return fetch(`https://openapi.programming-hero.com/api/quiz`)
+          },
+     element:<Home></Home>},
+
+    //  {path:'/topics',
+    //  loader: async()=>{
+    //   return fetch(`https://openapi.programming-hero.com/api/quiz`)
+    //       },
+    //  element:<Topics></Topics>},
+
     ]},
+    
   ])
 
   return (
