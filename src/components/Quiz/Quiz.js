@@ -2,9 +2,9 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 // import QuizDetails from '../QuizDetails/QuizDetails';
 import QuizDetails from './../QuizDetails/QuizDetails';
-import './Quiz.css'
+import './Quiz.css';
 
-const Quiz = ({name}) => {
+const Quiz = () => {
 
     const topic = useLoaderData()
    console.log('topic',topic.data.questions)
@@ -16,6 +16,7 @@ const Quiz = ({name}) => {
            
             <h1 className='my-5 topic-name  '> Quiz of  {topic.data.name}  
                </h1>
+              
             {
                 topic.data.questions.map(quiz=><QuizDetails
                 key ={quiz.id}
