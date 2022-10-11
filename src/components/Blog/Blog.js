@@ -6,7 +6,7 @@ const Blog = () => {
             
             <h1 className='text-center mt-5'>Here Are Some Questions with Answers</h1>
 
-    <div class="">
+    <div class="container ">
 
         <div class="p-3">
             <div class="p-2">
@@ -22,9 +22,10 @@ const Blog = () => {
            
             <div class="p-2">
               <h5>3. write about React UseRef Hook </h5>
-              <p>Ans : 
+              <p>Ans : The useRef Hook allows us to presist values between renders.It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
+    </p>
                 
-              </p>
+              
             </div>
            
     
