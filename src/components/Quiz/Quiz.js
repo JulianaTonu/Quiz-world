@@ -11,11 +11,11 @@ const Quiz = ({name}) => {
 
 
     return (
-        <div className='container'>
+        <div className='container '>
           
            
-            <h1 className='my-5 topic-name'>{topic.data.name}  
-               Quiz</h1>
+            <h1 className='my-5 topic-name  '> Quiz of  {topic.data.name}  
+               </h1>
             {
                 topic.data.questions.map(quiz=><QuizDetails
                 key ={quiz.id}
