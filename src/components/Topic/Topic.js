@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
+
 import './Topic.css'
+import Quiz from './../Quiz/Quiz';
 
 
 const Topic = ({topic}) => {
@@ -15,6 +17,7 @@ const {name,logo,id}=topic
 <Link to={`/topic/${id}`}><button className='btn btn-warning'>Start Quiz</button>
            
             </Link>
+           
 
             </div>
     );

@@ -1,5 +1,42 @@
 .quiz-card{
-    border: 2px solid red;
+    width: 600px;
+    border: 2px solid rgb(80, 74, 74);
     border-radius: 10px;
     margin: 20px;
+    margin-left: 30%;
+}
+.quiz-card p{
+    background-color: rgb(244, 239, 244);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.options{
+    padding: 20px;
+    margin: 20px;
+    /* width: 250px; */
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+}
+
+.options p:hover{
+background-color: rgb(246, 195, 244);
+}
+
+@media screen and (max-width:767px){
+    .quiz-card{
+       width: auto;
+       padding: 10px;
+       margin: 20px;
+
+    }
+    .options{
+        display: inline;
+        width: auto;
+        margin-left: 0;
+    }
+    
 }

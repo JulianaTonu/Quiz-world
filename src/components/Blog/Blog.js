@@ -6,7 +6,7 @@ const Blog = () => {
             
             <h1 className='text-center mt-5'>Here Are Some Questions with Answers</h1>
 
-    <div class="container ">
+    <div class="container bg-info ">
 
         <div class="p-3">
             <div class="p-2">
