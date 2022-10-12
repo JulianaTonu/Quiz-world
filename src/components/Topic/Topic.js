@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
-import Quiz from '../Quiz/Quiz';
+// import Quiz from '../Quiz/Quiz';
 
 import './Topic.css'
 
