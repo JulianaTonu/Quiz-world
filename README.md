@@ -1,5 +1,21 @@
-# Getting Started with Create React App
 
+# Project Name - Quiz World 
+## Live link: (https://merry-peony-da45ed.netlify.app/home)
+## About Project :
+✒ This is a online Quiz App.
+<br>
+✒ Here i used React.js, React Bootstrap and also used vanilla Css.
+<br>
+✒ In my project you can see quiz about four topics
+<br>
+✒ In this project i also used react Toastify
+<br>
+✒ if you click eyeicon then a toast will pop up and it will show you the correct answer
+<br>
+✒ if you click wrong option then a toast will pop up and it will show you that you click the wrong answer
+
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
