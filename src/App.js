@@ -17,6 +17,8 @@ function App() {
     children:[
       {path:'/',
      element:<Home></Home>},
+      {path:'./',
+     element:<Home></Home>},
 
      {path:'/home',
      loader: async()=>{
@@ -42,6 +44,9 @@ function App() {
 
     ]},
     
+    {path:'/*',
+  element:<h4>Sorry!!!404 The page is not Found</h4>
+}
   ])
 
   return (
