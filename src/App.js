@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Main from './components/Main/Main';
 import Home from './components/Home/Home';
-// import QuizDetails from './components/QuizDetails/QuizDetails';
+
 import Quiz from './components/Quiz/Quiz';
 import Blog from './components/Blog/Blog';
 import QuizChart from './components/QuizChart/QuizChart';
@@ -15,15 +15,17 @@ function App() {
     {path:'/',
     element:<Main></Main>, 
     children:[
-      {path:'/',
-     element:<Home></Home>},
-      {path:'./',
-     element:<Home></Home>},
+
+      
+      
 
      {path:'/home',
      loader: async()=>{
       return fetch(`https://openapi.programming-hero.com/api/quiz`)
           },
+     element:<Home></Home>},
+
+     {path:'/',
      element:<Home></Home>},
 
      {path:'/topic/:topicId',
@@ -43,10 +45,11 @@ function App() {
      element:<QuizChart></QuizChart>},
 
     ]},
-    
     {path:'/*',
-  element:<h4>Sorry!!!404 The page is not Found</h4>
+ element:<h4>Sorry!!!404 The page is not Found</h4>
 }
+    
+    
   ])
 
   return (

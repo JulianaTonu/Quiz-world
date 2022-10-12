@@ -19,3 +19,13 @@ padding: 10px;
 .quiz-btn:hover{
     background-color: rgb(175, 58, 169);
 }
+@media screen and (max-width:767px){
+    .topic{
+       /* width: ; */
+       padding: 10px;
+       margin:0%;
+
+    }
+    
+    
+}
