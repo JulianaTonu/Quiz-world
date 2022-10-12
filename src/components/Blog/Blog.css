@@ -18,12 +18,13 @@
        width: auto;
        padding: 10px;
        margin: auto;
+       
 
     }
     
     .text{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        
+      gap: 20px;
     }
 }
